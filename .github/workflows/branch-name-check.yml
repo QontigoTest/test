@@ -1,0 +1,7 @@
+name: Branch Name Check
+on:
+  pull_request:
+    types: [assigned, opened, synchronize, reopened]
+jobs:
+  check_branchname:
+    uses: Qontigo/devops-gh-actions/.github/workflows/branch-name-check.yml@main
